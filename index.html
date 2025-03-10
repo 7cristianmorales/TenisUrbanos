@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenis Urbanos</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el CSS externo aquí -->
+    <link rel="icon" type="image/jpg" href="Imagenes/icon.jpg"> <!-- Favicon -->
+</head>
+
+<body>
+
+    <!-- Barra superior de redes sociales -->
+    <div class="top-bar">
+        <a href="https://www.instagram.com/tenisurbanos_/" target="_blank">
+            <img src="Imagenes/instagram.png" alt="Instagram" class="icon"> Instagram
+        </a>
+        <a href="https://wa.link/or2piz/" target="_blank">
+            <img src="Imagenes/whatsapp.png" alt="WhatsApp" class="icon"> WhatsApp
+        </a>
+    </div>
+
+    <!-- Encabezado con logo y nombre -->
+    <header class="header">
+        <a href="https://www.instagram.com/tenisurbanos_" target="_blank">
+            <img src="Imagenes/logo.png" alt="Logo de Tenis Urbanos" class="logo-img">
+        </a>
+        <img src="Imagenes/titulo.png" alt="Título de Tenis Urbanos" class="titulo-img">
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Confirma tu talla.html">Confirma tu talla</a></li>
+            <li class="dropdown">
+                <a href="#">Catálogo</a>
+                <ul class="dropdown-menu">
+                    <li><a href="Catalogo Hombre.html">Hombre</a></li>
+                    <li><a href="Catalogo Mujer.html">Mujer</a></li>
+                </ul>
+            </li>
+            <li><a href="Carrito de compra.html">Carrito de compra</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <br>
+    <br>
+
+    <!-- Video de presentación -->
+    <iframe width="900" height="506" 
+        src="https://www.youtube.com/embed/OMIekuAY22A?si=FON37m9IeE0SltUs" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
+    <!-- Sección de Bienvenida -->
+    <article class="welcome-section">
+        <h2>Bienvenido a <span class="highlight">Tenis Urbanos</span></h2>
+        <br>
+        <br>
+        <p><b>¡Más que sneakers, una actitud!</b></p>
+
+        <p>En <b>Tenis Urbanos</b>, creemos que el calzado es mucho más que un accesorio:  
+        es una declaración de estilo, confianza y autenticidad. Ya sea que busques comodidad para el día a día,  
+        rendimiento para entrenar o exclusividad en cada paso, aquí encontrarás el par perfecto.</p>
+
+        <p>Nuestros sneakers combinan:</p>
+
+        <ul>
+            <li><b>Diseños icónicos</b> que reflejan las últimas tendencias en moda urbana.</li>
+            <li><b>Tecnología de confort</b> con amortiguación avanzada para un ajuste ideal.</li>
+            <li><b>Materiales premium</b> que garantizan calidad y durabilidad.</li>
+        </ul>
+
+        <p><b>¡No camines, deja huella!</b>  
+        Explora nuestra colección y lleva tu estilo al siguiente nivel.</p>
+        <aside > <!-- Imagen lateral -->
+            <div><a href="#"><img src="Imagenes/imagen1.png" width="350" height="350"></a></div>
+        </aside>
+    </article>
+
+    <!-- Sección de Carrusel -->
+    <section>
+        <h1 id="titulo">NUEVOS PRODUCTOS</h1>
+        <br>
+
+        <div class="product-grid">
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre18.jpg" alt="Tenis Modelo 18">
+                <p>Nike Air Max DN</p>
+                <p>$210.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre19.jpg" alt="Tenis Modelo 19">
+                <p>Nike Air Max DN</p>
+                <p>$210.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Mujer/Mujer19.jpg" alt="Tenis Modelo 19">
+                <p>Nike AF1</p>
+                <p>$210.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Mujer/Mujer20.jpg" alt="Tenis Modelo 20">
+                <p>Nike Vomero</p>
+                <p>$190.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre20.jpg" alt="Tenis Modelo 20">
+                <p>New Balance Elite</p>
+                <p>$190.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <p>&#169; 2025 Tenis Urbanos - Todos los derechos reservados</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://www.instagram.com/tenisurbanos_/" target="_blank">
+            <img src="Imagenes/instagram.png" class="icon" alt="Instagram"> Instagram
+        </a>
+        <a href="https://wa.link/or2piz/" target="_blank">
+            <img src="Imagenes/whatsapp.png" class="icon" alt="WhatsApp"> WhatsApp
+        </a>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+    </footer>
+
+</body>
+</html>

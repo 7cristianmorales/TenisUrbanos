@@ -1,0 +1,295 @@
+
+
+/* ================== RESET Y ESTILOS GENERALES ================== */
+/* Reset básico: Elimina márgenes y rellenos predeterminados, ajusta el modelo de caja y define una fuente genérica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Fondo con color degradado */
+body {
+    background: linear-gradient(to bottom, #ff8c00, #ff0000);
+    color: rgb(0, 0, 0); 
+    text-align: center; 
+}
+
+#titulo {
+    font-size: 40px;
+    color: #222;
+}
+
+/* ================== BARRA SUPERIOR (REDES SOCIALES) ================== */
+.top-bar {
+    background-color: #222;
+    padding: 10px 0; /* Espaciado superior e inferior */
+    text-align: right; /* Alinea el contenido a la derecha */
+}
+/* Estilos para los enlaces en la barra superior */
+.top-bar a {
+    color: white;
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    margin: 0 15px; /* Espaciado horizontal entre enlaces */
+    font-size: 14px;
+}
+/* Tamaño de los íconos en la barra superior */
+.top-bar .icon {
+    width: 20px; /* Ancho de los íconos */
+    margin-right: 5px; /* Espaciado derecho entre ícono y texto */
+}
+
+
+
+/* ================== ENCABEZADO ================== */
+.header {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #4f4e4e; /* Color de fondo*/
+    text-align: center; /* Centra el texto */
+}
+/* Estilo del logo */
+.logo-img {
+    width: 250px; /* Tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 0; /* Espacio entre el logo y el título */
+}
+
+/* Estilo del título */
+.titulo-img {
+    width: 700px; /* Tamaño del título */
+    height: auto; /* Mantiene la proporción */
+    
+}
+
+
+/* ================== MENÚ DE NAVEGACIÓN ================== */
+.nav-bar {
+    background-color: #333;
+    padding: 10px 0; /* Espaciado vertical */
+}
+/* Lista del menú de navegación */
+.nav-bar ul {
+    list-style: none; /* Elimina los estilos de lista */
+    display: flex;
+    justify-content: center;
+}
+/* Estilo de los elementos del menú */
+.nav-bar ul li {
+    position: relative; /* Permite posicionar submenús */
+}
+/* Estilo de los enlaces del menú */
+.nav-bar ul li a {
+    color: white;
+    text-decoration: none; /* Sin subrayado */
+    font-size: 20px; /* Tamaño del texto */
+    padding: 10px 15px; /* Espaciado interno */
+}
+/* Cambia el fondo cuando el usuario pasa el cursor sobre un enlace */
+.nav-bar ul li a:hover {
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+
+/* ----------- Submenú ----------- */
+.nav-bar .dropdown-menu {
+    position: absolute;
+    top: 100%; /* Ubica el submenú justo debajo del menú principal */
+    left: 0;
+    background: #444;
+    display: none; /* Oculta el submenú por defecto */
+    flex-direction: column;
+    min-width: 150px; /* Ancho mínimo */
+}
+/* Estilo de los elementos del submenú */
+.nav-bar .dropdown-menu li {
+    width: 100%;
+}
+/* Estilo de los enlaces del submenú */
+.nav-bar .dropdown-menu a {
+    padding: 10px;
+    display: block;
+    color: white;
+}
+/* Mostrar el submenú cuando el usuario pasa el cursor sobre "Catálogo" */
+.nav-bar .dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+
+
+/* ================== SECCIÓN DE BIENVENIDA ================== */
+.welcome-section {
+    max-width: 800px; /* Ancho máximo */
+    margin: 40px auto; /* Centrado con margen vertical */
+    padding: 20px;
+    background: white;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center;
+}
+/* Estilo del título de la sección de bienvenida */
+.welcome-section h2 {
+    font-size: 28px;
+    color: #222;
+}
+/* Clase para resaltar texto */
+.highlight {
+    color: #e60023;
+    font-weight: bold;
+}
+/* Estilos para los párrafos de la sección de bienvenida */
+.welcome-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+/* Estilo de la lista dentro de la sección de bienvenida */
+.welcome-section ul {
+    list-style: none;
+}
+/* Estilo de cada elemento de la lista */
+.welcome-section ul li {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+}
+
+
+
+/* ================== BOTONES ================== */
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Botón principal */
+.btn-primary {
+    background-color: #e60023;
+    color: white;
+}
+/* Cambio de color al pasar el cursor */
+.btn-primary:hover {
+    background-color: #c4001a;
+}
+/* Botón secundario */
+.btn-secondary {
+    background-color: #444;
+    color: white;
+}
+/* Cambio de color al pasar el cursor */
+.btn-secondary:hover {
+    background-color: #222;
+}
+
+
+
+/* ================== SECCIÓN DE CATALOGOS ================== */
+.catalogo {
+    background-color: white;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+/* Estilo del título de la sección de novedades */
+.catalogo h2 {
+    font-size: 24px;
+    color: #222;
+}
+
+/* ----------- Diseño de productos ----------- */
+/* Diseño de cuadrícula para los productos */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+/* Estilos para cada producto */
+.product {
+    color: #000000;
+    background: #f6f6f6;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 200px;
+}
+/* Imágenes de los productos */
+.product img {
+    width: 100%;
+    height: auto;
+}
+/* Estilo del texto de los productos */
+.product p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+
+/* ================== PIE DE PÁGINA (FOOTER) ================== */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    margin-top: 30px;
+    text-align: center;
+}
+/* Estilos para los enlaces del footer */
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+/* Estilos para los enlaces del footer */
+.footer .icon {
+    width: 20px;
+    margin-right: 5px;
+}
+/* Estilos para los parrafos del footer */
+.footer p {
+    margin: 5px 0;
+}
+
+
+
+/* ================== TABLAS ================== */
+table {
+    width: 60%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+/* ----------- Estilos de las celdas ----------- */
+th, td {
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+/* Encabezados de tabla */
+th {
+    background-color: #e60023;
+    color: black;
+    font-weight: bold;
+}
+
+/* Alternar colores en las filas */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
