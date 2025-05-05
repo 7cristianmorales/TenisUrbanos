@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Hombre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el CSS externo aquí -->
+    <link rel="icon" type="image/jpg" href="Imagenes/icon.jpg"> <!-- Favicon -->
+</head>
+</head>
+
+<body>
+    
+    <!-- Carrito Offcanvas Responsive -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas" aria-labelledby="carritoOffcanvasLabel">
+        <div class="offcanvas-header">
+          <h5 id="carritoOffcanvasLabel" class="w-100 text-center">Carrito de Compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+          
+          <!-- Tabla responsive para evitar corte de columnas -->
+          <div class="table-responsive">
+            <table id="lista-carrito" class="table table-sm">
+              <thead>
+                <tr>
+                  <th>Imagen</th>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                  <th>Cantidad</th>
+                  <th>Talla</th>
+                  <th>Eliminar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Productos del carrito -->
+              </tbody>
+            </table>
+          </div>
+  
+          <!-- Botón para vaciar el carrito -->
+          <a href="#" id="vaciar-carrito" class="btn btn-danger btn-sm w-100 mt-2">Vaciar Carrito</a>
+        </div>
+    </div>
+  
+  
+    <!-- Barra superior de redes sociales -->
+    <div class="top-bar">
+          <button class="btn btn-outline-danger position-relative" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas">
+            <img src="Imagenes/carrito.png" class="icon">
+          </button>
+          <a href="https://www.instagram.com/tenisurbanos_/" target="_blank">
+              <img src="Imagenes/instagram.png" alt="Instagram" class="icon"> Instagram
+          </a>
+          <a href="https://wa.link/or2piz/" target="_blank">
+              <img src="Imagenes/whatsapp.png" alt="WhatsApp" class="icon"> WhatsApp
+          </a>
+    </div>
+    
+
+    <!-- Encabezado con logo y nombre -->
+    <header class="header container-fluid text-center py-4">
+        <a href="https://www.instagram.com/tenisurbanos_" target="_blank">
+          <img src="Imagenes/logo.png" alt="Logo de Tenis Urbanos" class="img-fluid logo-img">
+        </a>
+        <img src="Imagenes/titulo.png" alt="Título de Tenis Urbanos" class="img-fluid titulo-img">
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav d-flex justify-content-center w-100 text-light">
+            <li class="nav-item">
+              <a class="nav-link active fs-5" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="Confirma tu talla.html">Confirmar tu talla</a>
+            </li>
+            <li class="nav-item dropdown fs-5">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Catalogo </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Catalogo Hombre.html">Hombre</a></li>
+                <li><a class="dropdown-item" href="Catalogo Mujer.html">Mujer</a></li>
+                <li><a class="dropdown-item disabled" href="#">Otros</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="Pokemon.html">API Pokemon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="Contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+    <!-- Sección de Catalogo Hombre -->
+    <section class="catalogo">
+        <h2>HOMBRE</h2>
+        <!-- Fila 1 -->
+        <div class="product-grid">
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre1.jpg" alt="Tenis Modelo 1">
+                <p>Nike AF1 Accesorios</p>
+                <p>$180.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre2.jpg" alt="Tenis Modelo 2">
+                <p>Nike Alfha Force</p>
+                <p>$190.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre3.jpg" alt="Tenis Modelo 3">
+                <p>Adidas Super Star</p>
+                <p>$180.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre4.jpg" alt="Tenis Modelo 4">
+                <p>Adidas Adi2000</p>
+                <p>$190.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre5.jpg" alt="Tenis Modelo 5">
+                <p>Nike SB</p>
+                <p>$190.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+        <!-- Fila 2 -->
+        <div class="product-grid">
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre6.jpg" alt="Tenis Modelo 6">
+                <p>Nike V2k</p>
+                <p>$180.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre7.jpg" alt="Tenis Modelo 7">
+                <p>Nike Trainer</p>
+                <p>$210.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre8.jpg" alt="Tenis Modelo 8">
+                <p>Nike SB</p>
+                <p>$190.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre9.jpg" alt="Tenis Modelo 9">
+                <p>Nike Jordan Retro 3</p>
+                <p>$210.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre10.jpg" alt="Tenis Modelo 10">
+                <p>New Balance 740</p>
+                <p>$190.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+        <!-- Fila 3 -->
+        <div class="product-grid">
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre11.jpg" alt="Tenis Modelo 11">
+                <p>New Balance 550</p>
+                <p>$210.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre12.jpg" alt="Tenis Modelo 12">
+                <p>New Balance Veny</p>
+                <p>$190.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre13.jpg" alt="Tenis Modelo 13">
+                <p>Nike Air Max Combat</p>
+                <p>$180.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre14.jpg" alt="Tenis Modelo 14">
+                <p>Nike Air Max TN</p>
+                <p>$210.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre15.jpg" alt="Tenis Modelo 15">
+                <p>New Balance 9060</p>
+                <p>$210.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+        <!-- Fila 4 -->
+        <div class="product-grid">
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre16.jpg" alt="Tenis Modelo 16">
+                <p>Nike Air Max DN</p>
+                <p>$210.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre17.jpg" alt="Tenis Modelo 17">
+                <p>Nike AF1</p>
+                <p>$190.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre18.jpg" alt="Tenis Modelo 18">
+                <p>Nike Air Max DN</p>
+                <p>$210.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre19.jpg" alt="Tenis Modelo 19">
+                <p>Nike Air Max DN</p>
+                <p>$210.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="Imagenes/Catalogo/Hombre/Hombre20.jpg" alt="Tenis Modelo 20">
+                <p>New Balance Elite</p>
+                <p>$190.000</p>
+                <button class="btn-primary">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&#169; 2025 Tenis Urbanos - Todos los derechos reservados</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://www.instagram.com/tenisurbanos_/" target="_blank">
+            <img src="Imagenes/instagram.png" class="icon" alt="Instagram"> Instagram
+        </a>
+        <a href="https://wa.link/or2piz/" target="_blank">
+            <img src="Imagenes/whatsapp.png" class="icon" alt="WhatsApp"> WhatsApp
+        </a>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+    </footer>
+   
+    <script src="Carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

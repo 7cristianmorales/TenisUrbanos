@@ -1,0 +1,335 @@
+
+
+/* ================== RESET Y ESTILOS GENERALES ================== */
+/* Reset básico: Elimina márgenes y rellenos predeterminados, ajusta el modelo de caja y define una fuente genérica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Fondo con color degradado */
+body {
+    background: linear-gradient(to bottom, #ff8c00, #ff0000);
+    color: rgb(0, 0, 0); 
+    text-align: center; 
+}
+
+#titulo {
+    font-size: 40px;
+    color: #222;
+}
+
+
+
+/* ================== BARRA SUPERIOR (REDES SOCIALES) ================== */
+.top-bar {
+    background-color: #222;
+    padding: 10px 20px; /* Añadir espacio en los lados */
+    display: flex; /* Usamos flexbox */
+    align-items: center; /* Alineamos verticalmente */
+    justify-content: flex-end; /* Mantiene los elementos alineados a la derecha */
+    flex-wrap: wrap; /* Esto permite que se acomode en múltiples líneas */
+}
+/* Asegurar que la lista y los enlaces están en la misma línea */
+.top-bar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos para los enlaces en la barra superior */
+.top-bar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px; /* Espaciado horizontal */
+    font-size: 14px;
+    display: flex;
+    align-items: center; /* Alinea icono con texto */
+}
+
+/* Tamaño de los íconos en la barra superior */
+.top-bar .icon {
+    cursor: pointer; /* Hace que el cursor sea una mano */
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    object-fit: cover; /* Recorta la imagen para ajustarla */
+    border-radius: 5px; /* Opcional, para bordes redondeados */
+}
+
+
+/* ================== ESTILOS DEL CARRITO ================== */
+/* Botón eliminar producto */
+.eliminar-producto {
+    background: none;
+    border: none;
+    color: rgb(202, 0, 0);
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+}
+/* Efecto al pasar cursor */
+.eliminar-producto:hover {
+    color: rgb(108, 0, 0);
+    transform: scale(1.2);
+}
+/* Ancho del carrito */
+#carritoOffcanvas {
+    width: 90vw;        /* Carrito usa 90% del ancho de la ventana */
+    max-width: 500px;   /* Máximo ancho para no hacerlo excesivo */
+}
+
+
+
+/* ================== ESTILOS DEL MENSAJE DE NOTIFICACIÓN ================== */
+.notificacion {
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    background: #d30000;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in-out;
+}
+/* Estilos al pasar el cursor sobre la notificación */
+.notificacion:hover {
+    opacity: 1;
+}
+
+
+
+/* ================== ENCABEZADO ================== */
+.header {
+    display: flex; /* Usa flexbox para alinear los elementos */
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    padding: 20px; /* Espaciado interno */
+    background-color: #4f4e4e; /* Color de fondo*/
+    text-align: center; /* Centra el texto */
+}
+/* Estilo del logo*/
+.logo-img {
+    width: 250px; /* Tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+    margin-bottom: 0; /* Espacio entre el logo y el título */
+}
+/* Estilo del título */
+.titulo-img {
+    width: 700px; /* Tamaño del título */
+    height: auto; /* Mantiene la proporción */
+    
+}
+
+
+
+/* ================== MENÚ DE NAVEGACIÓN ================== */
+.navbar-nav .nav-link {
+    color: #df0000; /* Color de las letras */
+}
+
+  .navbar-nav .nav-link:hover {
+    color: #ffffff; /* Color al pasar el mouse sobre el enlace */
+}
+
+
+
+/* ================== SECCIÓN DE BIENVENIDA ================== */
+.welcome-section {
+    max-width: 800px; /* Ancho máximo */
+    margin: 40px auto; /* Centrado con margen vertical */
+    padding: 20px;
+    background: white;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center;
+}
+/* Estilo del título de la sección de bienvenida */
+.welcome-section h2 {
+    font-size: 28px;
+    color: #222;
+}
+/* Clase para resaltar texto */
+.highlight {
+    color: #e60023;
+    font-weight: bold;
+}
+/* Estilos para los párrafos de la sección de bienvenida */
+.welcome-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+/* Estilo de la lista dentro de la sección de bienvenida */
+.welcome-section ul {
+    list-style: none;
+}
+/* Estilo de cada elemento de la lista */
+.welcome-section ul li {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0;
+}
+
+
+
+/* ================== BOTONES ================== */
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Botón principal */
+.btn-primary {
+    background-color: #e60023;
+    color: white;
+}
+/* Cambio de color al pasar el cursor */
+.btn-primary:hover {
+    background-color: #c4001a;
+}
+/* Botón secundario */
+.btn-secondary {
+    background-color: #444;
+    color: white;
+}
+/* Cambio de color al pasar el cursor */
+.btn-secondary:hover {
+    background-color: #222;
+}
+
+
+
+/* ================== SECCIÓN DE CARRUSEL ================== */
+.carousel-item img {
+    width: auto;              /* Ancho automático para mantener la proporción */
+    height: 500px;            /* Altura fija o ajustable según necesites */
+    object-fit: contain;      /* Contiene toda la imagen sin recortar */
+    display: block;
+    margin: 0 auto;           /* Centra horizontalmente */
+}
+
+
+
+/* ================== SECCIÓN DE CATALOGOS ================== */
+.catalogo {
+    background-color: white;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+/* Estilo del título de la sección de novedades */
+.catalogo h2 {
+    font-size: 24px;
+    color: #222;
+}
+
+/* ----------- Diseño de productos ----------- */
+/* Diseño de cuadrícula para los productos */
+.product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+/* Estilos para cada producto */
+.product {
+    color: #000000;
+    background: #f6f6f6;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 200px;
+}
+/* Imágenes de los productos */
+.product img {
+    width: 100%;
+    height: auto;
+}
+/* Estilo del texto de los productos */
+.product p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+
+/* ================== PIE DE PÁGINA (FOOTER) ================== */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    margin-top: 30px;
+    text-align: center;
+}
+/* Estilos para los enlaces del footer */
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+}
+/* Estilos para los enlaces del footer */
+.footer .icon {
+    width: 20px;
+    margin-right: 5px;
+}
+/* Estilos para los parrafos del footer */
+.footer p {
+    margin: 5px 0;
+}
+
+
+
+/* ================== API POKEMON ================== */
+/* Estilo del encabezado */
+.pokemon header {
+    background-color: #d40000;
+    color: white; /* Color de las letras blanco */
+    padding: 16px; /* Espaciado alrededor del encabezado */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    text-align: center; /* Asegura que el texto dentro del encabezado esté centrado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    height: 100px; /* Establece una altura fija para el encabezado */
+}
+
+/* Estilo del título */
+.pokemon h1 {
+    margin: 0; /* Elimina el margen alrededor del título */
+}
+
+/* Estilo de la tarjeta del Pokémon */
+.pokemon #pokemon-card {
+    margin: 32px auto;
+    padding: 24px;
+    max-width: 300px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 2);
+    text-align: center;
+}
+
+/* Estilo de la imagen dentro de la tarjeta */
+.pokemon #pokemon-card img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Clase para ocultar elementos */
+.pokemon .hidden {
+    display: none;
+}
+
+

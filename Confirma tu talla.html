@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirma tu talla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el CSS externo aquí -->
+    <link rel="icon" type="image/jpg" href="Imagenes/icon.jpg"> <!-- Favicon -->
+</head>
+</head>
+
+<body>
+  
+    <!-- Carrito Offcanvas Responsive -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoOffcanvas" aria-labelledby="carritoOffcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 id="carritoOffcanvasLabel" class="w-100 text-center">Carrito de Compras</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+      </div>
+      <div class="offcanvas-body">
+        
+        <!-- Tabla responsive para evitar corte de columnas -->
+        <div class="table-responsive">
+          <table id="lista-carrito" class="table table-sm">
+            <thead>
+              <tr>
+                <th>Imagen</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Talla</th>
+                <th>Eliminar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Productos del carrito -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Botón para vaciar el carrito -->
+        <a href="#" id="vaciar-carrito" class="btn btn-danger btn-sm w-100 mt-2">Vaciar Carrito</a>
+      </div>
+    </div>
+
+
+    <!-- Barra superior de redes sociales -->
+    <div class="top-bar">
+        <button class="btn btn-outline-danger position-relative" data-bs-toggle="offcanvas" data-bs-target="#carritoOffcanvas">
+          <img src="Imagenes/carrito.png" class="icon">
+        </button>
+        <a href="https://www.instagram.com/tenisurbanos_/" target="_blank">
+            <img src="Imagenes/instagram.png" alt="Instagram" class="icon"> Instagram
+        </a>
+        <a href="https://wa.link/or2piz/" target="_blank">
+            <img src="Imagenes/whatsapp.png" alt="WhatsApp" class="icon"> WhatsApp
+        </a>
+    </div>
+
+    <!-- Encabezado con logo y nombre -->
+    <header class="header container-fluid text-center py-4">
+      <a href="https://www.instagram.com/tenisurbanos_" target="_blank">
+        <img src="Imagenes/logo.png" alt="Logo de Tenis Urbanos" class="img-fluid logo-img">
+      </a>
+      <img src="Imagenes/titulo.png" alt="Título de Tenis Urbanos" class="img-fluid titulo-img">
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav d-flex justify-content-center w-100 text-light">
+            <li class="nav-item">
+              <a class="nav-link active fs-5" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="Confirma tu talla.html">Confirmar tu talla</a>
+            </li>
+            <li class="nav-item dropdown fs-5">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Catalogo </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Catalogo Hombre.html">Hombre</a></li>
+                <li><a class="dropdown-item" href="Catalogo Mujer.html">Mujer</a></li>
+                <li><a class="dropdown-item disabled" href="#">Otros</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="Pokemon.html">API Pokemon</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="Contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+
+    <article class="welcome-section">
+
+        <img src="Imagenes/imagen2.png" alt="Imagen2" width="500" height="700" class="img-fluid">
+        <img src="Imagenes/imagen3.png" alt="imagen3" width="500" height="700" class="img-fluid">
+
+        <div class="container text-center py-4"> <!-- Contenedor principal -->
+            <h4 class="display-5">Guias para Tallas</h4>
+            <br>
+            <h3 class="display-6 mb-4">Hombres</h3> <!-- Título con estilo responsivo -->
+            
+            <div class="table-responsive d-flex justify-content-center"> <!-- Contenedor responsivo para tabla -->
+              <table class="table table-dark table-hover w-auto"> <!-- Tabla oscura, centrada y ajustable -->
+                <thead>
+                  <tr>
+                    <th>Talla Nacional</th>
+                    <th>USA</th>
+                    <th>Europea</th>
+                    <th>Centímetros</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>37</td><td>7</td><td>40</td><td>23.5 cm</td></tr>
+                  <tr><td>38</td><td>8</td><td>41</td><td>24 cm</td></tr>
+                  <tr><td>39</td><td>8.5</td><td>42</td><td>25 cm</td></tr>
+                  <tr><td>40</td><td>9.5</td><td>43</td><td>25.5 cm</td></tr>
+                  <tr><td>41</td><td>10</td><td>44</td><td>26 cm</td></tr>
+                  <tr><td>42</td><td>11</td><td>45</td><td>26 cm</td></tr>
+                </tbody>
+              </table>
+            </div>
+          
+            <br>
+          
+            <h3 class="display-6 mb-4">Mujeres</h3> <!-- Título -->
+            
+            <div class="table-responsive d-flex justify-content-center"> <!-- Contenedor responsivo para tabla -->
+              <table class="table table-dark table-hover w-auto"> <!-- Tabla oscura, centrada y ajustable -->
+                <thead>
+                  <tr>
+                    <th>Talla Nacional</th>
+                    <th>USA</th>
+                    <th>Europea</th>
+                    <th>Centímetros</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>35</td><td>5</td><td>36</td><td>22 cm</td></tr>
+                  <tr><td>36</td><td>6</td><td>37</td><td>23 cm</td></tr>
+                  <tr><td>37</td><td>7</td><td>38</td><td>23.5 cm</td></tr>
+                  <tr><td>38</td><td>8</td><td>39</td><td>24 cm</td></tr>
+                  <tr><td>39</td><td>9</td><td>40</td><td>25 cm</td></tr>
+                </tbody>
+              </table>
+            </div>
+          
+        </div>
+        
+    </article>
+
+
+    <footer class="footer">
+        <p>&#169; 2025 Tenis Urbanos - Todos los derechos reservados</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://www.instagram.com/tenisurbanos_/" target="_blank">
+            <img src="Imagenes/instagram.png" class="icon" alt="Instagram"> Instagram
+        </a>
+        <a href="https://wa.link/or2piz/" target="_blank">
+            <img src="Imagenes/whatsapp.png" class="icon" alt="WhatsApp"> WhatsApp
+        </a>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+    </footer>
+
+    <script src="Carrito.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

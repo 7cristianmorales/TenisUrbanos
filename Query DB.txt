@@ -1,0 +1,14 @@
+CREATE DATABASE personal;
+USE personal;
+
+CREATE TABLE personas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(30) NOT NULL,
+    apellido VARCHAR(30) NOT NULL,
+    correo VARCHAR(50) UNIQUE NOT NULL,
+    direccion VARCHAR(50) NULL,
+    telefono VARCHAR(15) NOT NULL,
+    talla ENUM('Ninguno', '35', '36', '37', '38', '39', '40', '41') DEFAULT 'Ninguno',
+    archivo VARCHAR(255), -- Para almacenar la ruta del archivo subido
+    observaciones TEXT
+);
